@@ -5,7 +5,8 @@ OPENMP=0
 DEBUG=0
 
 # refer to here: http://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/
-ARCH= -gencode arch=compute_61,code=[sm_61,compute_61]
+ARCH= -gencode arch=compute_61,code=[sm_61,compute_61] \
+      -gencode=arch=compute_52,code=[sm_52,compute_52]
 
 # This is what I use, uncomment if you know your arch and want to specify
 # ARCH= -gencode arch=compute_52,code=compute_52
